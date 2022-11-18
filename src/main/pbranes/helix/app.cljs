@@ -19,21 +19,21 @@
          (d/div {:class "calendar-container"}
                 ($ library-component)
                 (d/div {:class "calendar-main"}
-                       (d/div {:class "calendar-date-controls"} "date controls")
-                       (d/div {:class "calendar-date-controls"}
+                       (d/div {:class "calendar-date"} "Date Controls")
+                       (d/div {:class "calendar-date"}
                               (d/div {:class "week-controls"}
                                      (for [day ["Monday" "Tuesday" "Wednesday" "Thursday" "Friday" "Saturday" "Sunday"]]
                                        (d/div {:class "day"} day)))
                               (d/div {:class "summary-controls"} "...")
                               (d/div {:class "calendar-summary"} "summary"))
                        (d/div {:class "calendar-body"}
-                                (d/div {:class "calendar-body-list"}
-                                        (d/div {:class "calendar-day"}
-                                               (for [day ["1" "2" "3" "4" "5" "6" "7"]]
-                                                                        (d/div {:class "day"} day)))
-                                        (d/div {:class "calendar-dates"}
-                                               (for [day ["1" "2" "3" "4" "5" "6" "7"]]
-                                                 (d/div {:class "day"} ""))))
+                              (d/div {:class "calendar-body-list"}
+                                     (d/div {:class "calendar-day"}
+                                            (for [day ["1" "2" "3" "4" "5" "6" "7"]]
+                                              (d/div {:class "day"} day)))
+                                     (d/div {:class "calendar-dates"}
+                                            (for [day ["1" "2" "3" "4" "5" "6" "7"]]
+                                              (d/div {:class "day"} ""))))
                               (d/div {:class "calendar-week-controls"} "")
                               (d/div {:class "calendar-summary"} "summary"))))))
 

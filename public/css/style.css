@@ -24,6 +24,12 @@
     background: green;
     flex-grow: 1 ;
   }
+  
+  .calendar-container {
+    display: flex;
+    flex-grow: 8;
+    background: blue;
+  }
 
   .calendar-side {
     flex-grow: 0;
@@ -31,18 +37,11 @@
     visibility: show;
 
   }
-
-  .calendar-container {
-    display: flex;
-    flex-grow: 8;
-    background: blue;
-  }
-
+  
   .calendar-training {
     flex-grow: 1;
     background: orange;
   }
-
 
   .calendar-summary {
     flex-grow: 1;
@@ -55,7 +54,7 @@
     flex-direction: column;
   }
 
-  .calendar-date-controls {
+  .calendar-date {
     display: flex;
     background: cyan;
   }
