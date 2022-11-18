@@ -4,8 +4,12 @@
   "src/main"
   "src/test"]
 
- :dependencies
- []
 
+ :dependencies
+ [[lilactown/helix "0.1.8"]]
+
+ :dev-http {9000 "public"}
  :builds
- {}}
+ {:helix
+  {:target :browser
+   :modules {:main {:init-fn pbranes.helix.app/init!}}}}}
